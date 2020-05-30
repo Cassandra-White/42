@@ -1,7 +1,6 @@
 #include "libft.h"
 #include <stdio.h>
-#include <bsd/string.h>
-
+#include <string.h>
 
 	char ft(unsigned int c, char b)
 	{
@@ -90,7 +89,7 @@ int main(int argc, char **argv)
 	   printf("%p\n\n", destination2);
 	   printf("resultat Vrai MEMCCPY : %s \n\n", destination2);
 	   */
-	/*
+/*	
 	   printf("source1 : %s\n", source);
 	   printf("pointeur avant recherche : %p\n", source + 5);
 	   printf("poitneur trouvé par la function : %p\n\n", ft_memchr(source, 69, 10));
@@ -99,7 +98,7 @@ int main(int argc, char **argv)
 	   printf("source2 : %s\n", source2);
 	   printf("pointeur avant recherche : %p\n", source + 5);
 	   printf("poitneur trouvé par la VRAI function : %p\n\n", memchr(source, 69, 10));
-	   */
+*/	   
 
 	//	printf("le resulta est : %d\n\n", ft_memcmp(source, destination, 8));
 	/*
@@ -138,13 +137,14 @@ int main(int argc, char **argv)
 	   printf("%s\n",strsplit[3]);
 	   printf("%p\n",strsplit[4]);
 	   */
-	/*
-	   int num = -69;
+	   
+		int num = -2147483648LL;
 	   char *str = ft_itoa(num);
 
-	   printf("%s",str);
-	   */
-	/*
+	   printf("%s\n",str);
+	
+
+/*
 	   int dec = 12 ;
 	   void *p = &dec;
 	   printf("%d", ft_lstnew(p));
@@ -153,7 +153,7 @@ int main(int argc, char **argv)
 
 
 
-
+/*
 	char *a = "aegoeirhgerglih";
 	unsigned int c = 12;
 	char b = 'b';
@@ -163,6 +163,19 @@ int main(int argc, char **argv)
 
 	p = ft_strmapi(a,ft);
 	printf("%s\n", p);
+*/
+
+/*
+
+	char *tete = "test\200";
+	char *tetes = "test\0";
+
+	printf("%d\n", ft_strncmp(tete, tetes, 6));
+	printf("%d \n", strncmp(tete, tetes, 6));
+*/
+
+
+	
 
 	return(0);
 }

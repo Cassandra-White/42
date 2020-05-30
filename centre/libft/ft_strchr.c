@@ -3,8 +3,6 @@
 
 char * ft_strchr( const char *string, int searchedChar )
 {
-	if(!string)
-		return(0);
 	if (searchedChar == 0)
 	{
 		while (*string)
@@ -13,7 +11,10 @@ char * ft_strchr( const char *string, int searchedChar )
 	}
 
 	while(*string)
+	{
 		if(*string == (unsigned char)searchedChar)
 			return ((char*)(string));
+		string++;
+	}
 	return(0);
 }

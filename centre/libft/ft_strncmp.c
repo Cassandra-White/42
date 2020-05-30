@@ -14,12 +14,14 @@ int ft_strncmp( const char * first, const char * second, size_t length )
 	secondstr = (char *)second;
 	i = 0;
 
-	while (i < length)
+	if(length == 0)
+		return 0;
+	while (i < (length - 1) && firststr[i] && secondstr[i])
 	{
 		if (firststr[i] != secondstr[i])
 			return(firststr[i] - secondstr[i]);
 		i++;
 	}
-	return (firststr[i] - secondstr[i]);
+	return ((unsigned char)firststr[i] - (unsigned char)secondstr[i]);
 	
 }

@@ -18,7 +18,7 @@ static int	ft_sizetab(unsigned int numb)
 
 char *ft_itoa(int n)
 {
-	int	numb;
+	unsigned int	numb;
 	char		*str;
 	int		size;
 
