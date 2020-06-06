@@ -6,7 +6,7 @@
 /*   By: akrissan <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/06 14:02:22 by akrissan          #+#    #+#             */
-/*   Updated: 2020/06/06 14:22:16 by akrissan         ###   ########.fr       */
+/*   Updated: 2020/06/06 16:49:02 by akrissan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,6 +92,6 @@ char			**ft_split(char const *s, char c)
 				s++;
 		}
 	}
-	ab[i] = NULL;
+	tab[i] = NULL;
 	return (tab);
 }

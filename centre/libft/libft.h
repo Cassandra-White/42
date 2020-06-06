@@ -6,7 +6,7 @@
 /*   By: akrissan <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/06 15:33:39 by akrissan          #+#    #+#             */
-/*   Updated: 2020/06/06 16:19:30 by akrissan         ###   ########.fr       */
+/*   Updated: 2020/06/06 16:45:32 by akrissan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ size_t				ft_strlen(const char *str);
 int					ft_atoi(const char *str);
 void				*ft_memset(void *str, int c, size_t n);
 void				ft_bzero(void *str, size_t n);
-void				*ft_memcpy(void *destination, const void *src, size_t size);
+void				*ft_memcpy(void *destination, const void *srcs, size_t size);
 void				*ft_memccpy(void *dest, const void *src, int c, size_t n);
 void				*ft_memmove(void *dest, const void *src, size_t n);
 void				*ft_memchr(const void *s, int c, size_t n);
