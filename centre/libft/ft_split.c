@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: akrissan <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/06 14:02:22 by akrissan          #+#    #+#             */
+/*   Updated: 2020/06/06 14:06:49 by akrissan         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-static  char    **ft_wordfree(char **tab, int i)
+static  char	**ft_wordfree(char **tab, int i)
 {
 	int j;
 
@@ -15,14 +27,13 @@ static  char    **ft_wordfree(char **tab, int i)
 }
 
 
-char    *ft_wordtab(const char *s, char c)
+char			*ft_wordtab(const char *s, char c)
 {
-
-	char    *word;
-	int     i;
+	char	*word;
+	int		i;
 
 	i = 0;
-	while(s[i] && s[i] != c)
+	while (s[i] && s[i] != c)
 		i++;
 	if (!(word = malloc(sizeof(*word) * i+1 )))
 	{
@@ -41,13 +52,15 @@ char    *ft_wordtab(const char *s, char c)
 
 
 
-int     ft_wordnbr(char const *s, char c)                                                               {
+int     ft_wordnbr(char const *s, char c)
+{
 	int word;
 	int i;
 
 	i = 0;
 	word = 0;
-	while(s[i])                                                                                             {
+	while(s[i])
+	{
 		while(s[i] && (s[i] == c)) 
 			i++;
 		while(s[i] && (s[i] != c))
@@ -86,4 +99,3 @@ char    **ft_split(char const *s, char c)
 	return (tab);
 
 }
-
