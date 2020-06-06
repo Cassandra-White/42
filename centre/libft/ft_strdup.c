@@ -1,10 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: akrissan <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/06 14:51:30 by akrissan          #+#    #+#             */
+/*   Updated: 2020/06/06 14:52:37 by akrissan         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
-char    *ft_strdup(const char *source)
+char	*ft_strdup(const char *source)
 {
-	char    *cpy;
-	int        i;
+	char	*cpy;
+	int		i;
 
 	i = 0;
 	while (source[i])

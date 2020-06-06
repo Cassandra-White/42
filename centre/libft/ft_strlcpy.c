@@ -1,11 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: akrissan <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/06/06 15:00:12 by akrissan          #+#    #+#             */
+/*   Updated: 2020/06/06 15:03:01 by akrissan         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlcpy(char *  dest , const char *  src , size_t  size )
+size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
-
-	size_t i;
-	size_t len;
+	size_t	i;
+	size_t	len;
 
 	if (!dest)
 		return (0);
@@ -14,11 +24,10 @@ size_t ft_strlcpy(char *  dest , const char *  src , size_t  size )
 		len = size - 1;
 	else
 		len = i;
-	if(size)
+	if (size)
 	{
 		ft_memcpy(dest, src, len);
 		dest[len] = '\0';
 	}
-
 	return (i);
 }
