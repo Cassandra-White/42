@@ -1,8 +1,8 @@
 #include "libft.h"
 #include <stdio.h>
 #include <string.h>
-
-
+#include <unistd.h>
+#include <stdlib.h>
 static void             ft_print_result(char *s)
 {
 	int             len;
@@ -48,10 +48,11 @@ int main(void)
 
 	printf("TEST1 ft_itoa:\n");
 	ft_print_result(ft_itoa(0)); 
-
+	printf("\n");
 	printf("TEST2 ft_itoa:\n");
-//	printf("%s\n", ft_itoa(test2));
 	ft_print_result(ft_itoa(9)); 
+	printf("\n");
+
 
 	printf("TEST3 ft_itoa:\n");
 	printf("%s\n", ft_itoa(test3));
